@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="{% static "/css/pages/main.css" %}?{% now "U" %}">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="f-row">
+                <input id="name" name="name" type="text" class="f-input filled small xs:regular sm:large">
+                <label for="name" class="f-label">Field</label>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <p class="text-xs xs:text-base sm:text-xl md:text-3xl lg:text-5xl xl:text-7xl"> Responsive Typography </p>
+        </div>
+    </section>
+    <script src="{% static "/js/pages/main.js" %}?{% now "U" %}"></script>
+</body>
+</html>
